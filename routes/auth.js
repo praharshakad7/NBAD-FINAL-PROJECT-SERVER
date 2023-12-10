@@ -7,7 +7,7 @@ require("dotenv").config();
 
 const JWT_REFRESH_SECRET = "asdfasdfasdfasdf";
 const JWT_ACCESS_TOKEN_SECRET = "LFSLDJK";
-const ACESS_TOKEN_EXPIRY_TIME = 883600000;
+const ACESS_TOKEN_EXPIRY_TIME = 3000;
 const REFRESH_TOKEN_EXPIRY_TIME = 888640000;
 
 const refreshTokens = [];
