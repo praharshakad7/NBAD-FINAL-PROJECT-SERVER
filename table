@@ -1,0 +1,16 @@
+| Request Type | Path                                           | Required Parameters or JSON Object                                      |
+|--------------|------------------------------------------------|-------------------------------------------------------------------------|
+| GET          | /api/v1/test                                   | Authorization                                                           |
+| POST         | /api/v1/auth/register                          | name, email, password                                                   |
+| POST         | /api/v1/auth/login                             | email, password                                                         |
+| POST         | /api/v1/auth/getAccessToken                    | Authorization, Content-Type, refreshToken                               |
+| POST         | /api/v1/budget/createBudget                    | Authorization, Content-Type, budget                                     |
+| POST         | /api/v1/budget/addBudget                       | Authorization, Content-Type, name, totalAmount, startDate, endDate      |
+| POST         | /api/v1/budget/addExpense                      | Authorization, Content-Type, description, amount, date, categoryId      |
+| POST         | /api/v1/budget/addCategoryToBudget             | Authorization, Content-Type, name, allocatedAmount, spend, budgetId     |
+| POST         | /api/v1/budget/getAllExpenses                  | Authorization, Content-Type, categoryId                                 |
+| POST         | /api/v1/budget/deleteBudgetForUser             | Authorization, Content-Type, budgetId                                   |
+| GET          | /api/v1/budget/getAllUserExpense               | Authorization                                                           |
+| GET          | /api/v1/budget/getAllUserCategories            | Authorization                                                           |
+| GET          | /api/v1/budget/getAllBudgets                   | Authorization                                                           |
+| GET          | /api/v1/budget/getAllUserExpensesSortedByDate  | Authorization                                                           |
